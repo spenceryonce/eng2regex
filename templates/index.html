@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English to Regex Translator</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>English to Regex Translator</h1>
+        <form id="regexForm">
+            <div class="form-group">
+                <label for="englishInput">English Instructions</label>
+                <textarea id="englishInput" name="englishInput" rows="4" placeholder="Describe what the regex should do..."></textarea>
+            </div>
+            <div class="form-group">
+                <label for="exampleText">Example Text</label>
+                <textarea id="exampleText" name="exampleText" rows="4" placeholder="Enter example text..."></textarea>
+            </div>
+            <div class="form-group">
+                <label for="exampleResultText">Example Expected Result</label>
+                <textarea id="exampleResultText" name="exampleResultText" rows="4" placeholder="Enter expected result..."></textarea>
+            </div>
+            <button type="button" id="generateBtn">Generate Regex</button>
+        </form>
+        <div id="resultContainer">
+            <h2>Generated Regex</h2>
+            <pre id="regexOutput"></pre>
+        </div>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>

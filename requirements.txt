@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+g4f
+jinja2
+aiofiles
+python-multipart
+pydantic
