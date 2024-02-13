@@ -1,5 +1,12 @@
 {
-    "name": "eng2regex",
     "version": 2,
-    "buildCommand": "uvicorn main:app --reload"
+    "builds": [
+      { "src": "main.py", "use": "@vercel/python" }
+    ],
+    "routes": [
+      { "src": "/(.*)", "dest": "/main.py" }
+    ],
+    "env": {
+      "APP_MODULE": "main:app"
+    }
   }
