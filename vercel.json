@@ -1,0 +1,12 @@
+{
+    "name": "eng2regex",
+    "version": "0.0.1",
+    "description": "eng2regex",
+    "main": "main.py",
+    "scripts": {
+      "build": "uvicorn main:app --reload"
+    },
+    "dependencies": {
+      "uvicorn": "^0.17.6"
+    }
+  }
