@@ -121,11 +121,12 @@ h1 {
     color: #007bff;
     white-space: pre-wrap; /* Allows text to wrap within the container */
     word-break: break-word; /* Ensures long words do not cause overflow */
-    text-align: center;
+    text-align: left;
 }
 
 code {
     font-size: 2rem;
-    text-align: center;
+    text-align: left;
+    text-wrap: wrap;
 }
 
