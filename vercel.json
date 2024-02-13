@@ -1,10 +1,5 @@
 {
     "name": "eng2regex",
     "version": "0.0.1",
-    "scripts": {
-      "build": "uvicorn main:app --reload"
-    },
-    "dependencies": {
-      "uvicorn": "^0.17.6"
-    }
+    "buildCommand": "uvicorn main:app --reload"
   }
