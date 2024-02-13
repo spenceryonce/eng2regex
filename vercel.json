@@ -1,7 +1,6 @@
 {
     "name": "eng2regex",
     "version": "0.0.1",
-    "main": "main.py",
     "scripts": {
       "build": "uvicorn main:app --reload"
     },
