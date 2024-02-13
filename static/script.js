@@ -20,8 +20,18 @@ document.addEventListener("DOMContentLoaded", function() {
         })
         .then(response => response.json())
         .then(data => {
-            regexOutput.textContent = data.regex;
+            // Convert the regex to Markdown formatted text
+            const markdown = data.regex;
+            // Use marked.js to convert Markdown to HTML
+            const html = marked(markdown, {
+                highlight: function(code, lang) {
+                    return hljs.highlight(code, {language: lang}).value;
+                }
+            });
+            // Set the innerHTML of the regexOutput element to the highlighted HTML
+            regexOutput.innerHTML = html;
         })
+        
         .catch(error => {
             console.error("Error:", error);
             regexOutput.textContent = "Failed to generate regex. Please try again.";

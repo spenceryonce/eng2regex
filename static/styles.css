@@ -12,6 +12,48 @@ body {
     height: 100vh;
 }
 
+nav {
+    background-color: rgb(33 62 153 / 87%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+nav h1 {
+    color: white;
+    padding: 13px;
+    margin: 0;
+    text-align: left;
+}
+
+/* Add this to your CSS file or within a <style> tag in the <head> section of your HTML file */
+::-webkit-scrollbar {
+    width: 10px; /* Adjust scrollbar width */
+    background-color: rgb(245 245 245);
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: rgb(245, 245, 245); /* Adjust track background color */
+    border-radius: 10px; /* Add rounded corners to the track */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: rgb(153, 153, 153); /* Adjust scrollbar color (dark grey) */
+    border-radius: 10px; /* Add rounded corners to the thumb */
+  }
+  
+  /* Apply styles on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(80, 80, 80); /* Adjust scrollbar hover color */
+  }
+  
+
+#regexForm {
+    margin: 10px 20px 10px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
 .container {
     background-color: #fff;
     padding: 20px;
@@ -19,6 +61,7 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 90%;
     max-width: 600px;
+    margin-top: 40px;
 }
 
 h1 {
@@ -69,9 +112,20 @@ h1 {
     padding: 10px;
     background-color: #e9ecef;
     border-radius: 4px;
+    white-space: pre-wrap; /* Allows text to wrap within the container */
+    word-break: break-word; 
 }
 
 #regexOutput {
     font-family: monospace;
     color: #007bff;
+    white-space: pre-wrap; /* Allows text to wrap within the container */
+    word-break: break-word; /* Ensures long words do not cause overflow */
+    text-align: center;
 }
+
+code {
+    font-size: 2rem;
+    text-align: center;
+}
+
