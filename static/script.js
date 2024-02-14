@@ -37,4 +37,6 @@ document.addEventListener("DOMContentLoaded", function() {
             regexOutput.textContent = "Failed to generate regex. Please try again.";
         });
     });
+
+    
 });
